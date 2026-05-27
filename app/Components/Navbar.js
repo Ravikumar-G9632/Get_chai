@@ -39,7 +39,7 @@ export const Navbar = () => {
               <ul className="p-2 text-sm text-body font-medium">
 
                 <li>
-                  <Link href={'/Dashboard'} className="inline-flex w-full p-2 hover:bg-neutral-tertiary-medium rounded">
+                  <Link href={'/dashboard'} className="inline-flex w-full p-2 hover:bg-neutral-tertiary-medium rounded">
                     Dashboard
                   </Link>
                 </li>

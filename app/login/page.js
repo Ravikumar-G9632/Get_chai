@@ -16,7 +16,7 @@ export default function LoginPage() {
     // ✅ redirect safely AFTER render
     useEffect(() => {
         if (status === "authenticated") {
-            router.push("/Dashboard")
+            router.push("/dashboard")
         }
     }, [status, router])
 
@@ -65,18 +65,17 @@ export default function LoginPage() {
                     </div>
 
 
-                    <div onClick={() => signIn("github", { callbackUrl: "/" })} className='bg-amber-100 border   shadow-md scale-100 hover:scale-110 transition-transform duration-300    h-14 w-[40%] flex gap-11 items-center rounded-3xl px-11'>
+                    <div onClick={() => signIn("github", { callbackUrl: "/Dashboard" })} className='bg-amber-100 border   shadow-md scale-100 hover:scale-110 transition-transform duration-300    h-14 w-[40%] flex gap-11 items-center rounded-3xl px-11'>
                         <div className='logo'>
                             <img src="/icons8-github-logo-94.png" width="50" height="50" alt="" />
-                        </div>
+                        </div> 
                         <div className='name '>
                             <span className='text-xl text-black font-bold '> Continue with Git Hub</span>
                         </div>
 
                     </div>
 
-
-
+ 
                     <div className='bg-amber-100 border   shadow-md scale-100 hover:scale-110 transition-transform duration-300    h-14 w-[40%] flex gap-11 items-center rounded-3xl px-11'>
                         <div className='logo'>
                             <img src="/icons8-apple-50.png" alt="" />
@@ -86,8 +85,6 @@ export default function LoginPage() {
                         </div>
 
                     </div>
-
-
 
 
                 </div>
